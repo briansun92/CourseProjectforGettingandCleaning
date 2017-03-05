@@ -9,11 +9,11 @@ Included in this repository are **4** files:
 
 - `README.md` - this file providing the overview of the project and files included in this repository
 
-- `Codebook.md` - describes all of the variables
+- `Codebook.MD` - describes all of the variables
 
 - `run_analysis.R` - script that downloads the provided data, processed it, and outputs the clean dataset
 
-- `UCI HAR Tidy Averages Dataset.txt` - final tidy dataset with the average values of each variable for each activity and each subject
+- `Final Tidy Dataset.txt` - final tidy dataset with the average values of each variable for each activity and each subject
 
     
 
