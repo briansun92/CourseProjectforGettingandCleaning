@@ -31,7 +31,7 @@ The subject and activity data are combined into separate columns first by row bi
 
 **3. Replace `activity` Data and Subsetting `mean` and `std` Data**
 
-The numeric values (1 to 6) in `activity` column are replaced with corresponding text descriptions (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) from the mapping provided by the `activity_labels.txt` file.
+The numeric values (1 to 6) in `labid` column are replaced with corresponding text descriptions (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) from the mapping provided by the `activity_labels.txt` file.
 
 The `train` and `test` observation data are combined to create a 10299 by 561 dataframe. The `grep` function is then used to find the column indices of any variable that contains "mean" or "std" (standard deviation) data. 79 variables are found. The subset of data for these 79 variables is then column bound with the subject and activity dataframe to create a 10299 by 81 dataframe.
 
@@ -65,7 +65,7 @@ The `aggregate` function is used to summarize the data by taking the mean of the
 
 **6. Output the New Dataset**
 
-The `write.table` function is used to save the resultant 180 by 81 dataframe to a text file titled `UCI HAR Tidy Averages Dataset.txt`.
+The `write.table` function is used to save the resultant 180 by 81 dataframe to a text file titled `Final Tidy Dataset.txt`.
 
 ## Final Output
 
